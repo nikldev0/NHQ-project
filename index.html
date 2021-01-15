@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHQ Project</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' />
+    <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <!-- NAV SECTION -->
+    <nav class="flex justify-center items-center align-center w-screen text-white text-center h-4 bg-indigo-900 p-6">
+        <a href="#">Get motivational word!</a>
+    </nav>
+  <!-- END NAV SECTION -->
+
+  <!-- USER INPUT SECTION -->
+    <aside class="container m-auto border-2">
+        <img src="/assets/NGHQ_ICON_COLOUR.png" class="w-1/2 p-10 m-auto" alt="NHQ-icon">
+        <label class="ml-2" for="nountype-select">Choose Nountype:</label>
+        <!-- Select element -->
+        <select name="" id="select-box" class="bg-white w-full block border-yellow-500 border-2 border-gray-400 h-10 px-5 pr-10 my-4 rounded-full text-sm focus:outline-none"
+        placeholder="Search...">     
+        <!-- Fixed Options -->
+        <option value="" disabled selected>
+            -- Please select a object, concept or scene --
+        </option> 
+        <option value="object">Object</option>
+        <option value="concept">Concept</option>
+        <option value="scene">Scene</option>
+        </select>
+        <!-- Submit Button -->
+        <input type="submit" id="submitBtn" class="w-full p-2 mt-1 bg-green-500 rounded-full  cursor-pointer" value="Submit">
+    </aside>
+  <!-- END USER INPUT SECTION -->
+
+  <!-- OUTPUT SECTION -->
+    <main class="container m-auto-border-2">
+        <h1 id="output" class="text-center mt-20 capitalize"></h2>
+    </main>
+  <!-- END OUTPUT SECTION  -->
+
+</body>
+</html>
